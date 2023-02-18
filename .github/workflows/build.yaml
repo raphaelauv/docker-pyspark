@@ -1,0 +1,13 @@
+name: CI
+on: push
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: build container
+        run: |
+          docker build -t pyspark .
+
+
