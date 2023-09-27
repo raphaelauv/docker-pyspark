@@ -12,6 +12,8 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=TRUE
 RUN mkdir -p /opt/program
 WORKDIR /opt/program
 
+RUN pip install --upgrade pip
+
 COPY ./requirements.txt /opt/program/
 RUN pip install -r /opt/program/requirements.txt
 
