@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 ENV JAVA_HOME=/opt/java/openjdk
-COPY --from=eclipse-temurin:20-jre-jammy $JAVA_HOME $JAVA_HOME
+COPY --from=eclipse-temurin:21-jre-jammy $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 ENV PYTHONUNBUFFERED=TRUE
