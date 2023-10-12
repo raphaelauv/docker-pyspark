@@ -3,6 +3,6 @@
 ## Apache Spark container image
 
 
-- Java 20 (eclipse-temurin)
+- Java 21 (eclipse-temurin)
 - Python 3.11
 - PySpark 3.5.0
