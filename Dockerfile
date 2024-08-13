@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 ENV JAVA_HOME=/opt/java/openjdk
 COPY --from=eclipse-temurin:21-jre-jammy $JAVA_HOME $JAVA_HOME
@@ -17,4 +17,4 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /opt/program/
 RUN pip install -r /opt/program/requirements.txt
 
-RUN mkdir -p /usr/local/lib/python3.11/site-packages/pyspark/jars
+RUN mkdir -p /usr/local/lib/python3.12/site-packages/pyspark/jars
