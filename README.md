@@ -5,4 +5,4 @@
 
 - Java 21 (eclipse-temurin)
 - Python 3.12
-- PySpark 3.5.4
+- PySpark 3.5.5
