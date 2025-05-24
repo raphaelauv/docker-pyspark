@@ -1,1 +1,1 @@
-pyspark[sql,ml,pandas_on_spark]==3.5.5
+pyspark[sql,ml,pandas_on_spark]==4.0.0
