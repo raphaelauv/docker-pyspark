@@ -2,10 +2,10 @@
 FROM python:3.14-trixie
 
 ENV JAVA_HOME=/opt/java/openjdk
-COPY --from=eclipse-temurin:21-jre-noble $JAVA_HOME $JAVA_HOME
+COPY --from=eclipse-temurin:25-jre-resolute $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
-COPY --from=ghcr.io/astral-sh/uv:0.11.12 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.11.28 /uv /uvx /bin/
 
 RUN mkdir -p /opt/program
 WORKDIR /opt/program
