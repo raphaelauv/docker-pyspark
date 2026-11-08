@@ -4,4 +4,4 @@
 
 - Java 25 (eclipse-temurin)
 - Python 3.14
-- PySpark 4.2.0
+- PySpark 4.3.0
